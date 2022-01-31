@@ -16,7 +16,9 @@ import Data.List
 -- Hint! pattern matching is your friend.
 
 binomial :: Integer -> Integer -> Integer
-binomial = todo
+binomial n 0 = 1
+binomial 0 k = 0
+binomial n k = binomial(n-1) (k) + binomial(n-1) (k-1)
 
 ------------------------------------------------------------------------------
 -- Ex 2: implement the odd factorial function. Odd factorial is like
@@ -27,8 +29,11 @@ binomial = todo
 --   oddFactorial 6 ==> 5*3*1 ==> 15
 
 oddFactorial :: Integer -> Integer
-oddFactorial = todo
-
+oddFactorial 1 = 1
+oddFactorial n = if odd n
+                 then product [n,n-2..1]
+                 else product [n-1,n-3..1]
+                 
 ------------------------------------------------------------------------------
 -- Ex 3: implement the Euclidean Algorithm for finding the greatest
 -- common divisor:
@@ -59,7 +64,11 @@ oddFactorial = todo
 -- * https://en.wikipedia.org/wiki/Euclidean_algorithm
 
 myGcd :: Integer -> Integer -> Integer
-myGcd = todo
+myGcd a 0 = a
+myGcd 0 b = b
+myGcd a b = if a >= b
+            then (myGcd (a-b) (b))
+            else (myGcd (a) (b-a))
 
 ------------------------------------------------------------------------------
 -- Ex 4: Implement the function leftpad which adds space characters
@@ -75,8 +84,25 @@ myGcd = todo
 -- * you can compute the length of a string with the length function
 
 leftpad :: String -> Int -> String
-leftpad = todo
-
+--leftpad str 0 = str
+leftpad str n = if length(str) < n then 
+                leftpad (" ") (( n - length(str))) ++ str
+                else str
+{-
+leftpad str x = if length(str) == x then str
+                else
+                    if length(str) < x
+                    then leftpad (" " ++ str) (x - length(str))
+                    else str
+ -}
+{-
+leftpad str x
+    | a == x = str
+    | a > x  = str
+    | a < x  = leftpad (" " ++ str) ((x) - length(str))
+    where
+         a = length(str)
+-}
 ------------------------------------------------------------------------------
 -- Ex 5: let's make a countdown for a rocket! Given a number, you
 -- should produce a string that says "Ready!", counts down from the
@@ -91,7 +117,10 @@ leftpad = todo
 -- * you'll probably need a recursive helper function
 
 countdown :: Integer -> String
-countdown = todo
+countdown n = countdownHelper n "Ready!"
+
+countdownHelper 0 result = result ++ "Liftoff!"
+countdownHelper n result = countdownHelper (n-1) (result ++ show(n) ++ "... ") 
 
 ------------------------------------------------------------------------------
 -- Ex 6: implement the function smallestDivisor that returns the
@@ -109,7 +138,8 @@ countdown = todo
 -- Hint: remember the mod function!
 
 smallestDivisor :: Integer -> Integer
-smallestDivisor = todo
+smallestDivisor n = minimum [x | x <- [2,4..], if even(n `mod` x)then x else False]
+
 
 ------------------------------------------------------------------------------
 -- Ex 7: implement a function isPrime that checks if the given number
