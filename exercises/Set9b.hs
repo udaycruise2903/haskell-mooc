@@ -10,10 +10,10 @@ import Data.List
 -- Wikipedia: https://en.wikipedia.org/wiki/Eight_queens_puzzle
 --
 -- We'll be working with a two-dimensional coordinate system for indexing the
--- queens on a chessboard of arbitrary size. (1,1) represents the top left
--- corner. (1,2) is the next square on the top row, (1,3) is the one after that,
--- (2,1) is the first square on the second row, (2,2) is the second square in
--- the second row, and so on. In general, the coordinates are of the form
+-- queens on a (square) chessboard of arbitrary size. (1,1) represents the top
+-- left corner. (1,2) is the next square on the top row, (1,3) is the one after
+-- that, (2,1) is the first square on the second row, (2,2) is the second square
+-- in the second row, and so on. In general, the coordinates are of the form
 -- (row,column). The idea is that the following arrangement of queens on a 8x8
 -- board will be encoded as the list [(1,8),(2,6),(3,4),(5,7)] of coordinates:
 --
@@ -99,6 +99,9 @@ nextCol (i,j) = todo
 -- of the width (or height) n of the chess board; the naïve solution with elem
 -- takes O(n^3) time. Just ignore the previous sentence, if you're not familiar
 -- with the O-notation.)
+
+type Size = Int
+
 prettyPrint :: Size -> [Coord] -> String
 prettyPrint = todo
 
@@ -184,7 +187,6 @@ sameAntidiag (i,j) (k,l) = todo
 -- First Out (LIFO) manner, so we give this type the alias Stack:
 -- https://en.wikipedia.org/wiki/Stack_(abstract_data_type)
 
-type Size      = Int
 type Candidate = Coord
 type Stack     = [Coord]
 

@@ -88,6 +88,13 @@ indexDefault xs i def = todo
 -- increasing order.
 --
 -- Use pattern matching and recursion to iterate through the list.
+--
+-- Examples:
+--   sorted [1,2,3] ==> True
+--   sorted []      ==> True
+--   sorted [2,7,7] ==> True
+--   sorted [1,3,2] ==> False
+--   sorted [7,2,7] ==> False
 
 sorted :: [Int] -> Bool
 sorted xs = todo
@@ -118,12 +125,17 @@ merge :: [Int] -> [Int] -> [Int]
 merge xs ys = todo
 
 ------------------------------------------------------------------------------
--- Ex 8: define the function mymaximum that takes a list and a
--- function bigger :: a -> a -> Bool and returns the
--- biggest of the list, according to the comparing function.
+-- Ex 8: compute the biggest element, using a comparison function
+-- passed as an argument.
 --
--- An initial biggest value is provided to give you something to
--- return for empty lists.
+-- That is, implement the function mymaximum that takes
+--
+-- * a function `bigger` :: a -> a -> Bool
+-- * a value `initial` of type a
+-- * a list `xs` of values of type a
+--
+-- and returns the biggest value it sees, considering both `initial`
+-- and all element in `xs`.
 --
 -- Examples:
 --   mymaximum (>) 3 [] ==> 3
