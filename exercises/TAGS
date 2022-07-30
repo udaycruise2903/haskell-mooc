@@ -1,0 +1,1842 @@
+
+./Set3b.hs,266
+module Set3b Set3b25,26
+buildList buildList40,41
+sums sums53,54
+mylast mylast66,67
+indexDefault indexDefault87,88
+sorted sorted111,112
+sumsOf sumsOf127,128
+merge merge140,141
+mymaximum mymaximum168,169
+map2 map2188,189
+maybeMap maybeMap212,213
+
+./Set12Test.hs,1066
+module Set12Test Set12Test2,3
+main main13,14
+tests tests15,16
+ex1_list ex1_list30,31
+ex1_just ex1_just34,35
+ex1_nothing ex1_nothing38,39
+ex2_fmap2_examples ex2_fmap2_examples40,41
+ex2_fmap3_examples ex2_fmap3_examples44,45
+ex3_num ex3_num50,51
+ex3_empties ex3_empties55,56
+toList toList64,65
+ex4_num ex4_num66,67
+ex4_bool ex4_bool72,73
+toTwoList toTwoList80,81
+ex5_num ex5_num84,85
+ex5_bool ex5_bool91,92
+ex6_list ex6_list98,99
+ex6_maybe ex6_maybe103,104
+ex7_list ex7_list111,112
+ex7_maybe ex7_maybe116,117
+ex8_bool ex8_bool124,125
+ex8_num ex8_num130,131
+ex9_bool ex9_bool135,136
+ex9_num ex9_num142,143
+ex10_1 ex10_1148,149
+ex10_2 ex10_2153,154
+ex11_fmap_even ex11_fmap_even160,161
+trees trees167,168
+m_fmap m_fmap178,179
+ex11_fmap_plus ex11_fmap_plus182,183
+treeAndSum treeAndSum188,189
+m_treeSum_Sum m_treeSum_Sum195,196
+ex11_sumTree_int ex11_sumTree_int198,199
+split split203,204
+listToTree listToTree208,209
+m_sumTree_list m_sumTree_list218,219
+ex11_sumTree_list ex11_sumTree_list222,223
+
+./Set15.hs,1536
+module Set15 Set150,1
+sumTwoMaybes sumTwoMaybes18,19
+statements statements37,38
+calculator calculator55,56
+validateDiv validateDiv72,73
+data Address Address99,100
+data Address = Address Address99,100
+validateAddress validateAddress102,103
+data Person Person119,120
+data Person = Person Person119,120
+twoPersons twoPersons122,123
+boolOrInt boolOrInt144,145
+normalizePhone normalizePhone168,169
+data Arg Arg206,207
+data Arg = Number Number206,207
+data Arg = Number Int | Variable Variable206,207
+data Expression Expression209,210
+data Expression = Plus Plus209,210
+data Expression = Plus Arg Arg | Minus Minus209,210
+parseExpression parseExpression212,213
+data Priced Priced234,235
+data Priced a = Priced Priced234,235
+instance Functor Functor Priced237,238
+  fmap fmap238,239
+instance Applicative Applicative Priced240,241
+  pure pure241,242
+  liftA2 liftA2242,243
+class MyApplicative MyApplicative262,263
+  myPure myPure263,264
+  myLiftA2 myLiftA2264,265
+instance MyApplicative MyApplicative Maybe267,268
+  myPure myPure268,269
+  myLiftA2 myLiftA2269,270
+instance MyApplicative MyApplicative []270,271
+  myPure myPure271,272
+  myLiftA2 myLiftA2272,273
+(<(<#>)274,275
+f f275,276
+myFmap myFmap291,292
+tryAll tryAll318,319
+newtype Both Both340,341
+instance (F(Functor f, Functor g) => Functor (Both f g)343,344
+  fmap fmap344,345
+instance (A(Applicative f, Applicative g) => Applicative (Both f g)371,372
+  pure pure372,373
+  liftA2 liftA2373,374
+
+./Set16b.hs,274
+module Set16b Set16b0,1
+pounds pounds12,13
+usdToChf usdToChf26,27
+composeRates composeRates29,30
+fromName fromName51,52
+toFirst toFirst55,56
+toLast toLast59,60
+capitalize capitalize79,80
+toFull toFull81,82
+class Render Render92,93
+  render render93,94
+
+./Set2a.hs,327
+module Set2a Set2a12,13
+years years23,24
+takeFinal takeFinal33,34
+updateAt updateAt53,54
+substring substring70,71
+isPalindrome isPalindrome88,89
+palindromify palindromify105,106
+safeDiv safeDiv118,119
+greet greet137,138
+safeIndex safeIndex154,155
+eitherDiv eitherDiv167,168
+addEithers addEithers185,186
+
+./Set2aTest.hs,876
+module Set2aTest Set2aTest2,3
+main main13,14
+tests tests15,16
+ex1_years ex1_years30,31
+letter letter38,39
+word word39,40
+ex2_takeFinal_1 ex2_takeFinal_141,42
+ex2_takeFinal_2 ex2_takeFinal_246,47
+ex3_updateAt ex3_updateAt52,53
+ex4_substring ex4_substring61,62
+ex5_isPalindrome ex5_isPalindrome64,65
+ex6_palindromify ex6_palindromify72,73
+ex7_safeDiv_zero ex7_safeDiv_zero80,81
+ex7_safeDiv_nonZero ex7_safeDiv_nonZero83,84
+ex8_greet_nothing ex8_greet_nothing86,87
+ex8_greet_just ex8_greet_just89,90
+ex9_safeIndex_ok ex9_safeIndex_ok93,94
+ex9_safeIndex_fail ex9_safeIndex_fail98,99
+ex10_eitherDiv_zero ex10_eitherDiv_zero106,107
+ex10_eitherDiv_nonZero ex10_eitherDiv_nonZero109,110
+ex11_addEithers_both ex11_addEithers_both113,114
+ex11_addEithers_one ex11_addEithers_one116,117
+ex11_addEithers_neither ex11_addEithers_neither122,123
+
+./Set11bTest.hs,507
+module Set11aTest Set11aTest2,3
+main main19,20
+tests tests21,22
+word word31,32
+ex1 ex133,34
+ex2 ex242,43
+ex3_doubleCall ex3_doubleCall55,56
+ex3_doubleCall_2 ex3_doubleCall_261,62
+ex4_composeIO_1 ex4_composeIO_168,69
+ex4_composeIO_2 ex4_composeIO_275,76
+ex5 ex581,82
+ex6_hSelectLines ex6_hSelectLines94,95
+counter counter112,113
+ex7_interact_terminates ex7_interact_terminates117,118
+ex7_interact_example ex7_interact_example125,126
+ex7_interact_loop ex7_interact_loop129,130
+
+./Set9b.hs,567
+module Set9b Set9b0,1
+type Row Row44,45
+type Col Col45,46
+type Coord Coord46,47
+nextRow nextRow48,49
+nextCol nextCol51,52
+prettyPrint prettyPrint101,102
+sameRow sameRow125,126
+sameCol sameCol128,129
+sameDiag sameDiag131,132
+sameAntidiag sameAntidiag134,135
+type Size Size186,187
+type Candidate Candidate187,188
+type Stack Stack188,189
+danger danger190,191
+prettyPrint2 prettyPrint2225,226
+fixFirst fixFirst270,271
+continue continue292,293
+backtrack backtrack295,296
+step step364,365
+finish finish379,380
+solve solve382,383
+
+./Set15Test.hs,1044
+module Set15Test Set15Test2,3
+main main14,15
+tests tests16,17
+ex1 ex135,36
+ex2_1 ex2_143,44
+word word50,51
+ex2_2 ex2_252,53
+ex3_success ex3_success62,63
+ex3_failure_1 ex3_failure_167,68
+ex3_failure_2 ex3_failure_271,72
+ok ok78,79
+invalids invalids81,82
+ex4 ex484,85
+postCode postCode89,90
+street street90,91
+ex5_ok ex5_ok92,93
+ex5_fail ex5_fail97,98
+ex6_maybe ex6_maybe111,112
+ex6_list ex6_list123,124
+ex7_ok ex7_ok139,140
+sow sow144,145
+ex7_fail ex7_fail150,151
+digit digit158,159
+ex8 ex8160,161
+showE showE170,171
+showA showA173,174
+genA genA176,177
+genE genE179,180
+ex9_ok ex9_ok181,182
+ex9_fail ex9_fail185,186
+ex10_fmap ex10_fmap207,208
+ex10_liftA2 ex10_liftA2210,211
+ex11 ex11215,216
+ex12 ex12220,221
+ex13_maybe ex13_maybe226,227
+ex13_list ex13_list230,231
+tA tA233,234
+ex13_validation ex13_validation236,237
+ex14_ok ex14_ok241,242
+ex14_fail ex14_fail245,246
+ex15_pure ex15_pure248,249
+ex15_liftA2 ex15_liftA2251,252
+ex15_liftA2_2 ex15_liftA2_2254,255
+
+./Mooc/Test.hs,1766
+module Mooc.Test Mooc.Test2,3
+counterexample' counterexample'26,27
+expectation expectation28,29
+expected expected30,31
+actual actual31,32
+infix infix33,34
+actual actual36,37
+expected expected37,38
+infix infix39,40
+approximateListEq approximateListEq42,43
+hasElements hasElements44,45
+hasElementsDuplicates hasElementsDuplicates48,49
+was was53,54
+shrinkPositive shrinkPositive57,58
+forAllShrink_ forAllShrink_60,61
+forAll_ forAll_63,64
+conjoin' conjoin'67,68
+timedMillis timedMillis72,73
+timed timed74,75
+eval eval82,83
+isFail isFail85,86
+shouldFail shouldFail89,90
+stop_ stop_94,95
+withOverrideHandle withOverrideHandle96,97
+withStdinout withStdinout102,103
+capture capture106,107
+runc runc124,125
+runc' runc'126,127
+withNoInput withNoInput128,129
+withInput withInput133,134
+checkOutput checkOutput140,141
+checkResult checkResult141,142
+check check143,144
+isTodo isTodo147,148
+resultIsTodo resultIsTodo151,152
+data Outcome Outcome157,158
+data Outcome = Pass Pass157,158
+data Outcome = Pass | Fail Fail157,158
+data Outcome = Pass | Fail | Todo Todo157,158
+instance Semigroup Semigroup Outcome159,160
+  (<(<>)160,161
+instance Monoid Monoid Outcome162,163
+  mempty mempty163,164
+quietArgs quietArgs165,166
+globalTimeLimit globalTimeLimit167,168
+myCheck myCheck169,170
+histogram histogram176,177
+textAttr textAttr178,179
+textBold textBold180,181
+textBoldGreen textBoldGreen181,182
+textBoldRed textBoldRed182,183
+textBlue textBlue183,184
+showCheck showCheck185,186
+showOutcome showOutcome190,191
+showExercise showExercise195,196
+showFinal showFinal198,199
+type Test Test203,204
+precondition precondition205,206
+toJSON toJSON208,209
+score score212,213
+
+./Mooc/Th.hs,1868
+module Mooc.Th Mooc.Th2,3
+isDefined isDefined17,18
+varOrCon varOrCon23,24
+withDefined withDefined28,29
+getType getType35,36
+showType showType44,45
+hasType hasType54,55
+hasType' hasType'66,67
+data FieldType FieldType77,78
+data FieldType = SimpleType SimpleType77,78
+data FieldType = SimpleType String | WeirdTypeWeirdType77,78
+interpretFieldType interpretFieldType80,81
+data Constructor Constructor92,93
+data Constructor = Constructor Constructor92,93
+data Constructor = Constructor String [FieldType] | Weird Weird92,93
+interpretConstructor interpretConstructor95,96
+data DataType DataType100,101
+data DataType = DataType DataType100,101
+reifyType reifyType103,104
+bndrName bndrName115,116
+constructorName constructorName118,119
+constructorName' constructorName'120,121
+data Instance Instance131,132
+data Instance = Found Found131,132
+data Instance = Found | NotFound NotFound131,132
+data Instance = Found | NotFound String String | NoClass NoClass131,132
+data Instance = Found | NotFound String String | NoClass String | NoType NoType131,132
+lookupInstance lookupInstance134,135
+withInstance withInstance146,147
+withInstanceSilent withInstanceSilent155,156
+classContains classContains164,165
+lookupConstructor lookupConstructor175,176
+lookupInstance1 lookupInstance1179,180
+withInstance1 withInstance1191,192
+withInstances1 withInstances1200,201
+defineInstance defineInstance209,210
+data Call Call219,220
+data Call = Prefix Prefix219,220
+data Call = Prefix Name [Exp] | Operator Operator219,220
+parseCall parseCall221,222
+show' show'229,230
+showArgs showArgs231,232
+timeLimit timeLimit238,239
+testing testing241,242
+unqualifyName unqualifyName247,248
+unqualifyType unqualifyType249,250
+unqualify unqualify254,255
+testing' testing'268,269
+importsOnly importsOnly276,277
+
+./Mooc/LimitedPrelude.hs,52
+module Mooc.LimitedPrelude Mooc.LimitedPrelude0,1
+
+./Mooc/VeryLimitedPrelude.hs,60
+module Mooc.VeryLimitedPrelude Mooc.VeryLimitedPrelude0,1
+
+./Mooc/Todo.hs,133
+module Mooc.Todo Mooc.Todo0,1
+data TODO TODO4,5
+data TODO = TODO TODO4,5
+instance Exception Exception TODO5,6
+todo todo6,7
+
+./Set14a.hs,260
+module Set14a Set14a0,1
+greetText greetText29,30
+shout shout41,42
+longestRepeat longestRepeat52,53
+takeStrict takeStrict65,66
+byteRange byteRange77,78
+xorChecksum xorChecksum98,99
+countUtf8Chars countUtf8Chars115,116
+pingpong pingpong127,128
+
+./Set7Test.hs,1427
+module Set7Test Set7Test2,3
+main main15,16
+tests tests17,18
+ex1_velocity ex1_velocity31,32
+ex1_travel ex1_travel35,36
+instance (O(Ord a, Arbitrary a) => Arbitrary (Set a)38,39
+  arbitrary arbitrary39,40
+m2_member m2_member41,42
+ex2_member ex2_member47,48
+m2_add m2_add50,51
+ex2_add ex2_add56,57
+ex2_empty_add ex2_empty_add59,60
+instance Arbitrary Arbitrary Event65,66
+  arbitrary arbitrary66,67
+ex3_good ex3_good68,69
+canFinish canFinish71,72
+finished finished72,73
+bake bake74,75
+ex3_ok ex3_ok79,80
+ex3_finished ex3_finished82,83
+genBad genBad85,86
+ex3_error ex3_error93,94
+ex3_type ex3_type96,97
+ex4 ex4103,104
+ex5_one ex5_one112,113
+ex5_many ex5_many114,115
+ex6_Distance ex6_Distance118,119
+ex6_Time ex6_Time122,123
+ex6_Velocity ex6_Velocity126,127
+split split130,131
+ex7_combine ex7_combine137,138
+ex7_mempty ex7_mempty142,143
+smallInt smallInt147,148
+ex8_multiply1 ex8_multiply1149,150
+ex8_multiply2 ex8_multiply2154,155
+ex8_show1 ex8_show1163,164
+ex8_show1_multiply1 ex8_show1_multiply1170,171
+ex8_show2 ex8_show2178,179
+ex8_show2_multiply2 ex8_show2_multiply2188,189
+ex9_basics ex9_basics195,196
+ex9_either_both ex9_either_both204,205
+tree tree221,222
+special special227,228
+ex9_large ex9_large229,230
+ex10_examples ex10_examples244,245
+gen_arithmetic gen_arithmetic251,252
+m_ex10 m_ex10261,262
+ex10_large ex10_large266,267
+
+./Set14b.hs,586
+module Set14b Set14b0,1
+initQuery initQuery63,64
+depositQuery depositQuery66,67
+getAllQuery getAllQuery69,70
+openDatabase openDatabase74,75
+deposit deposit79,80
+balanceQuery balanceQuery107,108
+balance balance110,111
+data Command Command143,144
+data Command = Deposit Deposit143,144
+data Command = Deposit T.Text Int | Balance Balance143,144
+parseInt parseInt146,147
+parseCommand parseCommand149,150
+perform perform175,176
+encodeResponse encodeResponse190,191
+simpleServer simpleServer195,196
+server server224,225
+port port227,228
+main main230,231
+
+./Set6Test.hs,1826
+module Set6Test Set6Test2,3
+testEquals testEquals15,16
+ex1 ex117,18
+ex2 ex227,28
+word word40,41
+capitalizeOne capitalizeOne42,43
+ex3 ex347,48
+fromList fromList57,58
+ex4_eq ex4_eq59,60
+ex4_neq ex4_neq61,62
+ex5_egg ex5_egg63,64
+ex5_milk ex5_milk67,68
+ex6_egg ex6_egg71,72
+ex6_milk ex6_milk77,78
+instance Arbitrary Arbitrary Number84,85
+  arbitrary arbitrary85,86
+ex7_eq_check ex7_eq_check89,90
+ex7_finite_finite ex7_finite_finite97,98
+ex7_finite_infinite ex7_finite_infinite113,114
+ex7_infinite_infinite ex7_infinite_infinite128,129
+ex7_max_finite ex7_max_finite136,137
+ex7_max_infinite ex7_max_infinite142,143
+instance Arbitrary Arbitrary RationalNumber149,150
+  arbitrary arbitrary150,151
+ex8_refl ex8_refl154,155
+ex8_eq ex8_eq159,160
+primes primes166,167
+genPrime genPrime167,168
+identical identical169,170
+exactly exactly172,173
+genSimpl genSimpl174,175
+ex9_prime ex9_prime179,180
+ex9_eq ex9_eq183,184
+ex10_add_zero ex10_add_zero190,191
+ex10_add_commut ex10_add_commut195,196
+ex10_add_whole ex10_add_whole202,203
+ex10_add ex10_add207,208
+ex10_multiply_one ex10_multiply_one211,212
+ex10_multiply_commut ex10_multiply_commut216,217
+ex10_multiply_inverse ex10_multiply_inverse223,224
+ex10_multiply ex10_multiply228,229
+ex10_abs ex10_abs236,237
+ex10_signum_abs ex10_signum_abs241,242
+ex10_fromInteger ex10_fromInteger247,248
+ex10_negate ex10_negate252,253
+ex11_integer ex11_integer257,258
+ex11_list ex11_list262,263
+ex12_step_color ex12_step_color268,269
+ex12_step_suit ex12_step_suit273,274
+ex12_stepMany_color ex12_stepMany_color279,280
+ex12_stepMany_suit ex12_stepMany_suit286,287
+ex12_stepMany_class ex12_stepMany_class293,294
+ex12_stepMany_default ex12_stepMany_default299,300
+main main307,308
+tests tests309,310
+
+./Set9a.hs,533
+module Set9a Set9a10,11
+workload workload27,28
+echo echo40,41
+countValid countValid53,54
+repeated repeated65,66
+sumSuccess sumSuccess87,88
+data Lock Lock110,111
+data Lock = LockUndefinedLockUndefined110,111
+aLock aLock114,115
+isOpen isOpen118,119
+open open123,124
+lock lock127,128
+changeCode changeCode132,133
+data Text Text148,149
+data Text = Text Text148,149
+compose compose183,184
+type Permutation Permutation216,217
+identity identity219,220
+multiply multiply224,225
+permute permute227,228
+
+./Set13a.hs,803
+module Set13a Set13a0,1
+(?(?>)28,29
+Nothing Nothing29,30
+Just Just30,31
+readNames readNames33,34
+split split46,47
+checkNumber checkNumber52,53
+checkCapitals checkCapitals58,59
+winner winner85,86
+selectSum selectSum103,104
+data Logger Logger117,118
+data Logger a = Logger Logger117,118
+msg msg120,121
+instance Functor Functor Logger123,124
+  fmap fmap124,125
+instance Monad Monad Logger126,127
+  return return127,128
+  Logger Logger128,129
+instance Applicative Applicative Logger133,134
+  pure pure134,135
+  (<(<*>)135,136
+countAndLog countAndLog137,138
+exampleBank exampleBank151,152
+balance balance154,155
+rob rob172,173
+update update184,185
+paren paren212,213
+parensMatch parensMatch215,216
+count count243,244
+occurrences occurrences265,266
+
+./Set11a.hs,275
+module Set11a Set11a0,1
+hello hello24,25
+greet greet31,32
+greet2 greet241,42
+readWords readWords55,56
+readUntil readUntil72,73
+countdownPrint countdownPrint78,79
+isums isums93,94
+whenM whenM101,102
+ask ask116,117
+while while121,122
+debug debug141,142
+
+./Set3aTest.hs,1266
+module Set3aTest Set3aTest2,3
+main main14,15
+tests tests16,17
+letter letter34,35
+word word35,36
+ex1_maxBy ex1_maxBy37,38
+ex2_mapMaybe_Nothing ex2_mapMaybe_Nothing46,47
+ex2_mapMaybe_Just_String ex2_mapMaybe_Just_String49,50
+ex2_mapMaybe_Just_Int ex2_mapMaybe_Just_Int53,54
+ex3_mapMaybe2 ex3_mapMaybe257,58
+unpalindrome unpalindrome65,66
+ex4_palindromeHalfs ex4_palindromeHalfs67,68
+ex5_capitalize_1 ex5_capitalize_180,81
+ex5_capitalize_2 ex5_capitalize_286,87
+m_powers m_powers96,97
+ex6_powers_small ex6_powers_small111,112
+ex6_powers_large ex6_powers_large112,113
+ex7_while_number ex7_while_number114,115
+ex7_while_string ex7_while_string119,120
+ex8_whileRight_Left ex8_whileRight_Left126,127
+ex8_whileRight_step ex8_whileRight_step131,132
+ex9_1 ex9_1142,143
+ex10 ex10157,158
+ex11 ex11165,166
+ex12_empty ex12_empty171,172
+ex12_scalability ex12_scalability178,179
+ex12_arithmetic ex12_arithmetic185,186
+ex12_strings ex12_strings192,193
+ex13_empty ex13_empty199,200
+ex13_scalability ex13_scalability206,207
+ex13_arithmetic ex13_arithmetic214,215
+ex13_strings ex13_strings222,223
+ex13_mixed ex13_mixed230,231
+ex14_interpreter_1 ex14_interpreter_1233,234
+ex14_interpreter_2 ex14_interpreter_2247,248
+
+./Set10bTest.hs,389
+module Set10bTest Set10bTest2,3
+main main15,16
+tests tests17,18
+imports imports25,26
+ex1_normal ex1_normal28,29
+ex1_undefined ex1_undefined31,32
+ex2_normal ex2_normal34,35
+ex2_undefined ex2_undefined36,37
+ex3_normal ex3_normal40,41
+ex3_fail ex3_fail44,45
+ex4_bool ex4_bool47,48
+ex4_int ex4_int53,54
+ex4_list_ok ex4_list_ok58,59
+ex4_list_fail ex4_list_fail68,69
+
+./Set11aTest.hs,483
+module Set11aTest Set11aTest2,3
+main main14,15
+tests tests16,17
+imports imports30,31
+ex1_hello ex1_hello35,36
+word word39,40
+ex2_greet ex2_greet41,42
+ex3_greet2 ex3_greet245,46
+ex4_readWords ex4_readWords49,50
+ex5_readUntil ex5_readUntil54,55
+ex6 ex662,63
+ex7_isums ex7_isums67,68
+ex8_whenM_True ex8_whenM_True72,73
+ex8_whenM_False ex8_whenM_False78,79
+ask ask84,85
+ex9_example ex9_example89,90
+ex9_False ex9_False94,95
+ex10_debug ex10_debug98,99
+
+./Set5a.hs,2280
+module Set5a Set5a5,6
+data Vehicle Vehicle14,15
+data Vehicle = Bike Bike14,15
+data Vehicle = Bike | Bus Bus14,15
+data Vehicle = Bike | Bus | Tram Tram14,15
+data Vehicle = Bike | Bus | Tram | TrainTrain14,15
+data BusTicket BusTicket21,22
+data BusTicket = SingleTicket SingleTicket21,22
+data BusTicket = SingleTicket | MonthlyTicket MonthlyTicket21,22
+data ShoppingEntry ShoppingEntry31,32
+data ShoppingEntry = MkShoppingEntry MkShoppingEntry31,32
+threeApples threeApples34,35
+twoBananas twoBananas37,38
+totalPrice totalPrice51,52
+buyOneMore buyOneMore60,61
+data Person Person70,71
+data Person = MkPerson MkPerson70,71
+fred fred74,75
+getName getName78,79
+getAge getAge82,83
+setName setName86,87
+setAge setAge90,91
+data Position Position101,102
+data Position = MkPosition MkPosition101,102
+origin origin103,104
+getX getX107,108
+getY getY111,112
+up up115,116
+right right119,120
+data Student Student126,127
+data Student = Freshman Freshman126,127
+data Student = Freshman | NthYear NthYear126,127
+data Student = Freshman | NthYear Int | GraduatedGraduated126,127
+study study134,135
+data UpDown UpDown158,159
+data UpDown = PlusCounter PlusCounter158,159
+data UpDown = PlusCounter Int | MinusCounter MinusCounter158,159
+zero zero161,162
+get get165,166
+tick tick171,172
+toggle toggle177,178
+data Color Color205,206
+data Color = Red Red205,206
+data Color = Red | Green Green205,206
+data Color = Red | Green | Blue Blue205,206
+data Color = Red | Green | Blue | Mix Mix205,206
+data Color = Red | Green | Blue | Mix Color Color | Invert Invert205,206
+rgb rgb208,209
+data OneOrTwo OneOrTwo225,226
+data OneOrTwo a = One One225,226
+data OneOrTwo a = One a | Two Two225,226
+data KeyVals KeyVals245,246
+data KeyVals k v = Empty Empty245,246
+data KeyVals k v = Empty | Pair Pair245,246
+toList toList248,249
+fromList fromList252,253
+data Nat Nat266,267
+data Nat = Zero Zero266,267
+data Nat = Zero | PlusOne PlusOne266,267
+fromNat fromNat269,270
+toNat toNat272,273
+data Bin Bin323,324
+data Bin = End End323,324
+data Bin = End | O O323,324
+data Bin = End | O Bin | I I323,324
+inc inc327,328
+prettyPrint prettyPrint332,333
+fromBin fromBin335,336
+toBin toBin338,339
+
+./Set1.hs,328
+module Set1 Set116,17
+one one23,24
+two two24,25
+one one25,26
+two two26,27
+double double32,33
+quadruple quadruple40,41
+distance distance56,57
+eeny eeny68,69
+checkPassword checkPassword76,77
+postagePrice postagePrice90,91
+isZero isZero106,107
+sumTo sumTo114,115
+power power125,126
+ilog3 ilog3147,148
+
+./Examples/Phonebook.hs,301
+module Examples.Phonebook Examples.Phonebook0,1
+createQuery createQuery7,8
+addQuery addQuery11,12
+addToPhonebook addToPhonebook14,15
+getQuery getQuery18,19
+getNumbersFor getNumbersFor22,23
+openDatabase openDatabase25,26
+addMode addMode31,32
+queryMode queryMode40,41
+main main49,50
+
+./Examples/Bank.hs,392
+module Examples.Bank Examples.Bank0,1
+data Bank Bank4,5
+data Bank = Bank Bank4,5
+deposit deposit7,8
+withdraw withdraw11,12
+data BankOp BankOp19,20
+data BankOp a = BankOp BankOp19,20
+runBankOp runBankOp22,23
+(+(+>>)26,27
+op1 op127,28
+(+(+>)33,34
+op op34,35
+depositOp depositOp39,40
+withdrawOp withdrawOp46,47
+distributeOp distributeOp50,51
+shareOp shareOp59,60
+
+./Examples/Phantom.hs,457
+module Examples.Phantom Examples.Phantom0,1
+data EUREUR2,3
+data USDUSD3,4
+data CHFCHF4,5
+data Money Money6,7
+data Money currency = Money Money6,7
+dollar dollar9,10
+twoEuros twoEuros12,13
+scaleMoney scaleMoney15,16
+addMoney addMoney18,19
+addMoneyUnsafe addMoneyUnsafe21,22
+data Rate Rate24,25
+data Rate from to = Rate Rate24,25
+eurToUsd eurToUsd27,28
+convert convert30,31
+invert invert33,34
+convertUnsafe convertUnsafe36,37
+
+./Examples/ReadTypes.hs,242
+module Examples.ReadTypes Examples.ReadTypes0,1
+isTypeSignature isTypeSignature7,8
+readTypesFile readTypesFile11,12
+qualifiedChildren qualifiedChildren19,20
+readTypesDir readTypesDir25,26
+readTypes readTypes32,33
+main main37,38
+
+./Examples/PathServer.hs,274
+module Examples.PathServer Examples.PathServer0,1
+makeResponse makeResponse10,11
+serveSource serveSource14,15
+serveSecret serveSecret19,20
+serveNotFound serveNotFound23,24
+servePath servePath30,31
+application application37,38
+port port43,44
+main main46,47
+
+./Examples/FetchWords.hs,15
+main main3,4
+
+./Examples/HelloServer.hs,117
+module Examples.HelloServer Examples.HelloServer0,1
+port port7,8
+main main10,11
+application application14,15
+
+./Examples/QuickCheck.hs,720
+module Examples.QuickCheck Examples.QuickCheck0,1
+rev rev6,7
+propRevSmall propRevSmall10,11
+propRevTwice propRevTwice13,14
+propRevMedium propRevMedium16,17
+propRevTwo propRevTwo20,21
+propLast propLast36,37
+propLastFixed propLastFixed39,40
+propCycle propCycle42,43
+propToUpperChanges propToUpperChanges46,47
+propToUpperChangesLetter propToUpperChangesLetter49,50
+listHasZero listHasZero52,53
+propSort propSort61,62
+propRevTwo' propRevTwo'65,66
+someLetters someLetters71,72
+data Switch Switch77,78
+data Switch = On On77,78
+data Switch = On | OffOff77,78
+toggle toggle80,81
+propToggleTwice propToggleTwice84,85
+instance Arbitrary Arbitrary Switch87,88
+  arbitrary arbitrary88,89
+
+./Examples/Validation.hs,860
+module Examples.Validation Examples.Validation0,1
+data Validation Validation5,6
+data Validation a = Ok Ok5,6
+data Validation a = Ok a | Errors Errors5,6
+instance Functor Functor Validation8,9
+  fmap fmap9,10
+instance Applicative Applicative Validation12,13
+  pure pure13,14
+  liftA2 liftA214,15
+invalid invalid19,20
+check check22,23
+birthday birthday31,32
+allPositive allPositive49,50
+allPositive' allPositive'60,61
+instance Alternative Alternative Validation68,69
+  empty empty69,70
+  Ok Ok70,71
+  Errors Errors71,72
+data ContactInfo ContactInfo78,79
+data ContactInfo = Email Email78,79
+data ContactInfo = Email String | Phone Phone78,79
+validateEmail validateEmail81,82
+checkLength checkLength84,85
+checkDigits checkDigits87,88
+validatePhone validatePhone90,91
+validateContactInfo validateContactInfo93,94
+
+./Set4b.hs,478
+module Set4b Set4b2,3
+countNothings countNothings20,21
+countHelper countHelper23,24
+myMaximum myMaximum33,34
+maxHelper maxHelper37,38
+sumAndLength sumAndLength51,52
+slStart slStart54,55
+slHelper slHelper55,56
+myConcat myConcat66,67
+concatStart concatStart69,70
+concatHelper concatHelper70,71
+largest largest81,82
+largestHelper largestHelper84,85
+myHead myHead97,98
+headHelper headHelper100,101
+myLast myLast112,113
+lastHelper lastHelper115,116
+
+./Set8Test.hs,1010
+module Set8Test Set8Test2,3
+main main12,13
+checkPicture checkPicture25,26
+checkShape checkShape29,30
+instance Arbitrary Arbitrary Color33,34
+  arbitrary arbitrary34,35
+ex1_line ex1_line37,38
+ex1_dot ex1_dot38,39
+ex1_black ex1_black39,40
+ex1_line_far ex1_line_far45,46
+ex2_blendColor ex2_blendColor50,51
+ex2_render ex2_render57,58
+ex2_solid ex2_solid63,64
+ex2_const ex2_const69,70
+ex3 ex375,76
+ex4_union ex4_union88,89
+ex4_cut ex4_cut97,98
+ex5_render ex5_render109,110
+ex5_dot ex5_dot113,114
+ex6_render ex6_render121,122
+ex6_dot ex6_dot127,128
+ex7_fill ex7_fill135,136
+ex7_zoom_xy ex7_zoom_xy139,140
+ex7_zoom_dot ex7_zoom_dot146,147
+ex7_flipx ex7_flipx156,157
+ex7_flipy ex7_flipy161,162
+ex7_flipxy ex7_flipxy166,167
+ex8_inverse ex8_inverse171,172
+ex8_order ex8_order176,177
+ex8_zoom ex8_zoom180,181
+ex9_blur_dot ex9_blur_dot193,194
+ex9_blur_solid ex9_blur_solid210,211
+ex10_blur_once ex10_blur_once217,218
+ex10_blur_many ex10_blur_many234,235
+
+./Set10aTest.hs,897
+module Set10aTest Set10aTest2,3
+main main17,18
+tests tests19,20
+ex1_finite ex1_finite31,32
+ex1_infinite ex1_infinite37,38
+evens evens45,46
+odds odds47,48
+ex2_finite ex2_finite50,51
+ex2_infinite_1 ex2_infinite_159,60
+ex2_infinite_2 ex2_infinite_263,64
+ex3_examples ex3_examples70,71
+word word75,76
+ex3_finite ex3_finite77,78
+ex3_infinite_1 ex3_infinite_182,83
+ex3_infinite_2 ex3_infinite_288,89
+ex4_simple ex4_simple93,94
+ex4_finite ex4_finite97,98
+ex4_infinite ex4_infinite104,105
+ex5_examples ex5_examples114,115
+ex5 ex5117,118
+ex6_finite ex6_finite124,125
+ex6_infinite ex6_infinite128,129
+ex7_finite ex7_finite133,134
+ex7_infinite ex7_infinite137,138
+shuffleCase shuffleCase142,143
+ex8_type ex8_type145,146
+ex8_works ex8_works153,154
+describe describe171,172
+move move174,175
+play play177,178
+ex9_1 ex9_1182,183
+ex9_2 ex9_2187,188
+
+./Set10a.hs,379
+module Set10a Set10a0,1
+doublify doublify17,18
+interleave interleave38,39
+deal deal57,58
+averages averages75,76
+alternate alternate93,94
+lengthAtLeast lengthAtLeast105,106
+chunks chunks123,124
+ignorecase ignorecase140,141
+data Room Room166,167
+data Room = Room Room166,167
+describe describe172,173
+move move175,176
+play play178,179
+maze maze183,184
+
+./Set16a.hs,699
+module Set16a Set16a0,1
+isSorted isSorted19,20
+sumIsLength sumIsLength51,52
+freq1 freq155,56
+inputInOutput inputInOutput80,81
+freq2 freq284,85
+outputInInput outputInInput111,112
+freq3 freq3115,116
+frequenciesProp frequenciesProp140,141
+frequencies frequencies143,144
+genList genList171,172
+data Arg Arg203,204
+data Arg = Number Number203,204
+data Arg = Number Int | Variable Variable203,204
+data Expression Expression206,207
+data Expression = Plus Plus206,207
+data Expression = Plus Arg Arg | Minus Minus206,207
+instance Arbitrary Arbitrary Arg209,210
+  arbitrary arbitrary210,211
+instance Arbitrary Arbitrary Expression212,213
+  arbitrary arbitrary213,214
+
+./Set5b.hs,441
+module Set5b Set5b2,3
+data Tree Tree8,9
+data Tree a = Empty Empty8,9
+data Tree a = Empty | Node Node8,9
+valAtRoot valAtRoot16,17
+treeSize treeSize29,30
+treeMax treeMax41,42
+allValues allValues56,57
+mapTree mapTree68,69
+cull cull112,113
+isOrdered isOrdered154,155
+data Step Step161,162
+data Step = StepL StepL161,162
+data Step = StepL | StepRStepR161,162
+walk walk173,174
+set set194,195
+search search210,211
+
+./Set16aTest.hs,538
+module Set16aTest Set16aTest2,3
+main main14,15
+tests tests16,17
+qPass qPass26,27
+qFail qFail34,35
+letter letter43,44
+ex1_1 ex1_145,46
+ex1_2 ex1_249,50
+ex2 ex253,54
+ex3 ex361,62
+outToIn outToIn69,70
+chg chg71,72
+changeCount changeCount75,76
+ex4 ex480,81
+ex5_1 ex5_192,93
+ex5_2 ex5_293,94
+ex5_3 ex5_394,95
+ex5_4 ex5_495,96
+testGenMany testGenMany97,98
+testGen testGen103,104
+ex6_1 ex6_1109,110
+ex6_2 ex6_2114,115
+ex7_arg_1 ex7_arg_1119,120
+ex7_arg_2 ex7_arg_2124,125
+ex7_exp ex7_exp130,131
+
+./Set6.hs,1575
+module Set6 Set62,3
+data Country Country11,12
+data Country = Finland Finland11,12
+data Country = Finland | Switzerland Switzerland11,12
+data Country = Finland | Switzerland | NorwayNorway11,12
+instance Eq Eq Country14,15
+  (=(==)15,16
+instance Ord Ord Country23,24
+  compare compare24,25
+  (<(<=)25,26
+  min min26,27
+  max max27,28
+data Name Name39,40
+data Name = Name Name39,40
+instance Eq Eq Name42,43
+  (=(==)43,44
+data List List53,54
+data List a = Empty Empty53,54
+data List a = Empty | LNode LNode53,54
+instance Eq Eq a => Eq (List a)56,57
+  (=(==)57,58
+data Egg Egg72,73
+data Egg = ChickenEgg ChickenEgg72,73
+data Egg = ChickenEgg | ChocolateEggChocolateEgg72,73
+data Milk Milk74,75
+data Milk = Milk Milk74,75
+data Number Number94,95
+data Number = Finite Finite94,95
+data Number = Finite Integer | InfiniteInfinite94,95
+data RationalNumber RationalNumber118,119
+data RationalNumber = RationalNumber RationalNumber118,119
+instance Eq Eq RationalNumber121,122
+  p p122,123
+simplify simplify141,142
+instance Num Num RationalNumber162,163
+  p p163,164
+  abs abs165,166
+  signum signum166,167
+  fromInteger fromInteger167,168
+  negate negate168,169
+data Color Color209,210
+data Color = Red Red209,210
+data Color = Red | Green Green209,210
+data Color = Red | Green | BlueBlue209,210
+data Suit Suit211,212
+data Suit = Club Club211,212
+data Suit = Club | Spade Spade211,212
+data Suit = Club | Spade | Diamond Diamond211,212
+data Suit = Club | Spade | Diamond | HeartHeart211,212
+
+./Set3bTest.hs,734
+module Set3bTest Set3bTest2,3
+main main12,13
+tests tests14,15
+imports imports28,29
+ex1_buildList ex1_buildList31,32
+ex2_sums ex2_sums37,38
+ex3_mylast_nonempty ex3_mylast_nonempty42,43
+ex3_mylast_empty ex3_mylast_empty45,46
+ex4_indexDefault_ok ex4_indexDefault_ok48,49
+ex4_indexDefault_fail ex4_indexDefault_fail54,55
+ex5_sorted_empty ex5_sorted_empty63,64
+ex5_sorted ex5_sorted66,67
+ex6_sumsOf ex6_sumsOf72,73
+ex7_merge ex7_merge74,75
+ex8_mymaximum_max ex8_mymaximum_max77,78
+ex8_mymaximum_min ex8_mymaximum_min81,82
+ex8_mymaximum_empty ex8_mymaximum_empty85,86
+ex9_map2_1 ex9_map2_189,90
+ex9_map2_2 ex9_map2_293,94
+ex10_maybeMap_1 ex10_maybeMap_198,99
+ex10_maybeMap_2 ex10_maybeMap_2104,105
+
+./Set1Test.hs,810
+module Set1Test Set1Test2,3
+main main12,13
+tests tests14,15
+ex1_one_defined ex1_one_defined34,35
+ex1_two_defined ex1_two_defined35,36
+ex1_one_type ex1_one_type36,37
+ex1_two_type ex1_two_type37,38
+ex2_double ex2_double39,40
+ex3_quadruple ex3_quadruple41,42
+ex4_distance ex4_distance43,44
+ex5_eeny_even ex5_eeny_even51,52
+ex5_meeny_odd ex5_meeny_odd52,53
+word word54,55
+passwords passwords55,56
+ex6_denied ex6_denied57,58
+ex6_accepted ex6_accepted61,62
+ex7_corners ex7_corners65,66
+ex7_cheap ex7_cheap70,71
+ex7_medium ex7_medium74,75
+ex7_large ex7_large78,79
+ex8_isZero_0 ex8_isZero_082,83
+ex8_isZero_positive ex8_isZero_positive84,85
+ex8_isZero_negative ex8_isZero_negative87,88
+ex9_sumTo ex9_sumTo90,91
+ex10_power ex10_power94,95
+ex11_ilog3 ex11_ilog399,100
+
+./Set3a.hs,590
+module Set3a Set3a5,6
+maxBy maxBy29,30
+mapMaybe mapMaybe41,42
+extractValue extractValue46,47
+mapMaybe2 mapMaybe264,65
+palindromeHalfs palindromeHalfs87,88
+firstHalf firstHalf90,91
+palindrome palindrome96,97
+capitalize capitalize113,114
+powers powers134,135
+while while157,158
+whileRight whileRight179,180
+step step184,185
+joinToLength joinToLength198,199
+(+(+|+)213,214
+[] []214,215
+(x(x:xs)215,216
+[] []216,217
+(x(x:xs)217,218
+sumRights sumRights233,234
+multiCompose multiCompose251,252
+multiApp multiApp273,274
+interpreter interpreter307,308
+
+./Set5aTest.hs,1635
+module Set5aTest Set5aTest2,3
+main main12,13
+tests tests14,15
+assertNormalConstructor assertNormalConstructor33,34
+assertNoFields assertNoFields36,37
+assertFields assertFields39,40
+ex1 ex142,43
+ex2 ex251,52
+word word65,66
+ex3_totalPrice ex3_totalPrice67,68
+eq eq72,73
+ex3_buyOneMore ex3_buyOneMore74,75
+ex4_name ex4_name78,79
+ex4_age ex4_age83,84
+ex5_simple ex5_simple88,89
+ex5_generate ex5_generate93,94
+ex6_freshman ex6_freshman102,103
+ex6_nth ex6_nth103,104
+ex6_graduate ex6_graduate104,105
+ex6_graduated ex6_graduated105,106
+ex7_type ex7_type107,108
+ex7_simple ex7_simple113,114
+ex7_generate ex7_generate118,119
+ex8_red ex8_red126,127
+ex8_green ex8_green127,128
+ex8_blue ex8_blue128,129
+fcmp fcmp130,131
+ex8_simple ex8_simple135,136
+ex8_complicated ex8_complicated140,141
+ex9 ex9153,154
+ex10_type ex10_type165,166
+m_ex10 m_ex10177,178
+ex10_string_bool ex10_string_bool179,180
+ex10_int_int ex10_int_int181,182
+instance Arbitrary Arbitrary Nat183,184
+  arbitrary arbitrary184,185
+ex11_to ex11_to186,187
+ex11_from ex11_from187,188
+ex11_just ex11_just188,189
+ex11_nothing ex11_nothing191,192
+instance Arbitrary Arbitrary Bin194,195
+  arbitrary arbitrary195,196
+ex12_from_zero ex12_from_zero199,200
+ex12_to_zero ex12_to_zero201,202
+ex12_to_from_zero ex12_to_from_zero203,204
+ex12_from_to_zero ex12_from_to_zero205,206
+ex12_from_one ex12_from_one207,208
+ex12_to_one ex12_to_one209,210
+ex12_to_from_one ex12_to_from_one211,212
+ex12_from_to_one ex12_from_to_one213,214
+ex12_to_from ex12_to_from215,216
+ex12_from_to ex12_from_to217,218
+
+./Set10b.hs,312
+module Set10b Set10b8,9
+(|(|||)23,24
+x x24,25
+boolLength boolLength37,38
+validate validate51,52
+class MySeq MySeq82,83
+  myseq myseq83,84
+instance MySeq MySeq Bool85,86
+  myseq myseq86,87
+instance MySeq MySeq Int88,89
+  myseq myseq89,90
+instance MySeq MySeq [a]91,92
+  myseq myseq92,93
+
+./Set16bTest.hs,661
+module Set16bTest Set16bTest2,3
+ex1_t ex1_t17,18
+ex1_v ex1_v19,20
+niceFloat niceFloat21,22
+ex2_v ex2_v23,24
+eurToChf eurToChf27,28
+composeTest1 composeTest129,30
+bob bob31,32
+smith smith33,34
+capitalBob capitalBob35,36
+capitalSmith capitalSmith37,38
+bobSmith bobSmith39,40
+aSmith aSmith41,42
+aBob aBob43,44
+ex2_t1 ex2_t147,48
+ex2_t2 ex2_t251,52
+letter letter55,56
+word word57,58
+ex3_v ex3_v59,60
+ex3_t1 ex3_t165,66
+ex3_t2 ex3_t269,70
+ex4_v1 ex4_v173,74
+ex4_t1 ex4_t177,78
+ex4_v2 ex4_v283,84
+ex4_t2 ex4_t288,89
+ex5_e ex5_e96,97
+ex5_u ex5_u100,101
+ex5_c ex5_c104,105
+tests tests110,111
+main main116,117
+
+./Set13aTest.hs,793
+module Set13aTest Set13aTest2,3
+main main16,17
+tests tests18,19
+word word32,33
+bad bad36,37
+ex1_ok ex1_ok42,43
+m_ex1_fail m_ex1_fail49,50
+ex1_fail ex1_fail52,53
+ex2_small ex2_small62,63
+ex2_big ex2_big71,72
+ex2_fail ex2_fail81,82
+ex3_ok ex3_ok92,93
+ex3_fail ex3_fail97,98
+ex4 ex4104,105
+ex5_balance_examples ex5_balance_examples112,113
+bank bank116,117
+ex5_balance_ok ex5_balance_ok121,122
+ex5_balance_nok ex5_balance_nok128,129
+ex6_rob_examples ex6_rob_examples135,136
+ex6_rob ex6_rob141,142
+ex7 ex7158,159
+ex8_paren ex8_paren162,163
+genMatch genMatch171,172
+flop flop175,176
+breakMatch breakMatch178,179
+filterMatch filterMatch182,183
+ex8_parensMatch ex8_parensMatch186,187
+ex9 ex9192,193
+ex10_1 ex10_1205,206
+ex10_2 ex10_2216,217
+
+./Set4a.hs,322
+module Set4a Set4a16,17
+allEqual allEqual36,37
+distinct distinct52,53
+middle middle67,68
+rangeOf rangeOf86,87
+longest longest105,106
+incrementKey incrementKey122,123
+average average136,137
+winner winner155,156
+freqs freqs170,171
+transfer transfer198,199
+swap swap208,209
+maxIndex maxIndex219,220
+
+./Set13bTest.hs,1100
+module Set13bTest Set13bTest2,3
+main main22,23
+tests tests24,25
+ex1_maybe ex1_maybe37,38
+ex1_state ex1_state48,49
+ex2_maybe ex2_maybe52,53
+perhapsIncrement perhapsIncrement60,61
+ex2_state ex2_state64,65
+ex3_visit_examples ex3_visit_examples70,71
+genTree genTree75,76
+shrinkTree shrinkTree82,83
+ex3_visit_tree ex3_visit_tree85,86
+ex3_visit_linear ex3_visit_linear94,95
+genConn genConn106,107
+genGraph genGraph114,115
+adj adj120,121
+ex3_visit ex3_visit124,125
+ex3_path_examples ex3_path_examples138,139
+ex3_path_linear ex3_path_linear144,145
+ex3_path ex3_path152,153
+ex4_simple ex4_simple164,165
+ex4 ex4170,171
+ex5_bits ex5_bits183,184
+m m191,192
+sumBounded sumBounded193,194
+ex6_sumBounded_ok ex6_sumBounded_ok196,197
+ex6_sumBounded_fail ex6_sumBounded_fail202,203
+sumNotTwice sumNotTwice208,209
+ex6_sumNotTwice ex6_sumNotTwice211,212
+ex7 ex7215,216
+word word228,229
+ex8_fmap_1 ex8_fmap_1230,231
+ex8_fmap_2 ex8_fmap_2236,237
+ex8_1 ex8_1243,244
+ex8_2 ex8_2249,250
+ex8_stress ex8_stress262,263
+ex9_mkCounter ex9_mkCounter274,275
+
+./Set5bTest.hs,1168
+module Set5bTest Set5bTest2,3
+main main13,14
+tests tests15,16
+treeOfSize treeOfSize30,31
+ex1_valAtRoot_Nothing ex1_valAtRoot_Nothing41,42
+ex1_valAtRoot_Just ex1_valAtRoot_Just43,44
+ex2_treeSize ex2_treeSize50,51
+treeAndMax treeAndMax55,56
+m_ex3 m_ex363,64
+ex3_small ex3_small66,67
+ex3_large ex3_large69,70
+tree3 tree372,73
+tree7 tree773,74
+ex4_small ex4_small76,77
+ex4_large ex4_large82,83
+ex5_small ex5_small88,89
+linearLeft linearLeft94,95
+linearRight linearRight97,98
+ex5_large ex5_large100,101
+treeWithout treeWithout109,110
+ex6_small ex6_small117,118
+replaceLeaf replaceLeaf124,125
+ex6_large ex6_large130,131
+orderedTree orderedTree140,141
+try try150,151
+breakOrder breakOrder155,156
+m_ex7 m_ex7166,167
+ex7_small ex7_small171,172
+ex7_large ex7_large175,176
+pathAndTree pathAndTree180,181
+m_ex8 m_ex8194,195
+ex8_small ex8_small198,199
+ex8_large ex8_large205,206
+ex9_small ex9_small210,211
+setList setList215,216
+ex9_medium ex9_medium218,219
+ex9_large ex9_large233,234
+m_ex10_yes m_ex10_yes241,242
+m_ex10_no m_ex10_no245,246
+ex10_small ex10_small249,250
+ex10_large ex10_large256,257
+
+./Set9aTest.hs,802
+module Set9aTest Set9aTest2,3
+main main13,14
+tests tests15,16
+ex1_small ex1_small28,29
+ex1_medium ex1_medium31,32
+ex1_big ex1_big35,36
+ex2_examples ex2_examples39,40
+word word44,45
+ex2_random ex2_random46,47
+digit digit53,54
+valid valid55,56
+invalid invalid65,66
+ex3 ex375,76
+ex4_unrepeated_int ex4_unrepeated_int80,81
+ex4_repeated_char ex4_repeated_char83,84
+ex4_repeated_int ex4_repeated_int90,91
+ex5 ex596,97
+ex6_examples ex6_examples102,103
+ex6_gen ex6_gen114,115
+spacify spacify132,133
+change change137,138
+ex7 ex7143,144
+ex8_one_one ex8_one_one156,157
+ex8_many_one ex8_many_one161,162
+ex8_bijection ex8_bijection169,170
+ex8_surjective ex8_surjective176,177
+ex9_id ex9_id187,188
+ex9_simple ex9_simple193,194
+ex9_compose ex9_compose198,199
+
+./Set11b.hs,256
+module Set11b Set11b0,1
+appendAll appendAll21,22
+swapIORefs swapIORefs36,37
+doubleCall doubleCall62,63
+compose compose81,82
+hFetchLines hFetchLines111,112
+hSelectLines hSelectLines124,125
+counter counter160,161
+interact' interact'165,166
+
+./Set8.hs,2467
+module Set8 Set80,1
+data Color Color21,22
+data Color = Color Color21,22
+getRed getRed24,25
+getGreen getGreen26,27
+getBlue getBlue28,29
+black black33,34
+white white36,37
+pink pink39,40
+red red42,43
+yellow yellow45,46
+data Coord Coord52,53
+data Coord = Coord Coord52,53
+data Picture Picture57,58
+data Picture = Picture Picture57,58
+justADot justADot60,61
+solid solid65,66
+examplePicture1 examplePicture169,70
+render render83,84
+showHex showHex100,101
+colorToHex colorToHex105,106
+getPixel getPixel108,109
+renderList renderList110,111
+renderListExample renderListExample118,119
+dotAndLine dotAndLine134,135
+blendColor blendColor167,168
+combine combine170,171
+blend blend176,177
+data Shape Shape184,185
+data Shape = Shape Shape184,185
+contains contains187,188
+dot dot193,194
+circle circle199,200
+fill fill206,207
+exampleCircle exampleCircle214,215
+rectangle rectangle231,232
+union union247,248
+cut cut250,251
+exampleSnowman exampleSnowman258,259
+paintSolid paintSolid278,279
+allWhite allWhite282,283
+exampleColorful exampleColorful288,289
+stipple stipple297,298
+stripes stripes302,303
+paint paint323,324
+examplePatterns examplePatterns330,331
+flipCoordXY flipCoordXY339,340
+flipXY flipXY343,344
+zoomCoord zoomCoord346,347
+zoom zoom350,351
+largeVerticalStripes largeVerticalStripes355,356
+class Transform Transform360,361
+  apply apply361,362
+xy xy364,365
+data Fill Fill384,385
+data Fill = Fill Fill384,385
+instance Transform Transform Fill386,387
+  apply apply387,388
+data Zoom Zoom389,390
+data Zoom = Zoom Zoom389,390
+instance Transform Transform Zoom392,393
+  apply apply393,394
+data Flip Flip395,396
+data Flip = FlipX FlipX395,396
+data Flip = FlipX | FlipY FlipY395,396
+data Flip = FlipX | FlipY | FlipXYFlipXY395,396
+instance Transform Transform Flip398,399
+  apply apply399,400
+data Chain Chain411,412
+data Chain a b = Chain Chain411,412
+instance Transform Transform (Chain a b)414,415
+  apply apply415,416
+largeVerticalStripes2 largeVerticalStripes2421,422
+flipBlend flipBlend427,428
+checkered checkered430,431
+data Blur Blur449,450
+data Blur = BlurBlur449,450
+instance Transform Transform Blur452,453
+  apply apply453,454
+data BlurMany BlurMany467,468
+data BlurMany = BlurMany BlurMany467,468
+instance Transform Transform BlurMany470,471
+  apply apply471,472
+blurredSnowman blurredSnowman477,478
+
+./Set13b.hs,1177
+module Set13b Set13b0,1
+test test36,37
+ifM ifM41,42
+safeDiv safeDiv75,76
+perhapsIncrement perhapsIncrement79,80
+mapM2 mapM283,84
+maze1 maze191,92
+visit visit141,142
+path path148,149
+findSum2 findSum2164,165
+allSums allSums185,186
+sumBounded sumBounded212,213
+f1 f1215,216
+sumNotTwice sumNotTwice226,227
+f2 f2229,230
+data Result Result251,252
+data Result a = MkResult MkResult251,252
+data Result a = MkResult a | NoResult NoResult251,252
+data Result a = MkResult a | NoResult | Failure Failure251,252
+instance Functor Functor Result253,254
+  fmap fmap255,256
+instance Applicative Applicative Result259,260
+  pure pure260,261
+  (<(<*>)261,262
+instance Monad Monad Result263,264
+  return return265,266
+  (>(>>=)266,267
+data SL SL290,291
+data SL a = SL SL290,291
+runSL runSL293,294
+msgSL msgSL297,298
+getSL getSL301,302
+putSL putSL305,306
+modifySL modifySL309,310
+instance Functor Functor SL312,313
+  fmap fmap314,315
+instance Applicative Applicative SL318,319
+  pure pure319,320
+  (<(<*>)320,321
+instance Monad Monad SL322,323
+  return return324,325
+  (>(>>=)325,326
+mkCounter mkCounter352,353
+
+./Set7.hs,1869
+module Set7 Set72,3
+data Distance Distance17,18
+data Distance = Distance Distance17,18
+data Time Time20,21
+data Time = Time Time20,21
+data Velocity Velocity23,24
+data Velocity = Velocity Velocity23,24
+velocity velocity27,28
+travel travel31,32
+data Set Set46,47
+data Set a = Set Set46,47
+emptySet emptySet50,51
+member member54,55
+add add58,59
+data Event Event91,92
+data Event = AddEggs AddEggs91,92
+data Event = AddEggs | AddFlour AddFlour91,92
+data Event = AddEggs | AddFlour | AddSugar AddSugar91,92
+data Event = AddEggs | AddFlour | AddSugar | Mix Mix91,92
+data Event = AddEggs | AddFlour | AddSugar | Mix | BakeBake91,92
+data State State94,95
+data State = Start Start94,95
+data State = Start | Error Error94,95
+data State = Start | Error | FinishedFinished94,95
+step step97,98
+bake bake100,101
+average average114,115
+reverseNonEmpty reverseNonEmpty120,121
+data Operation1 Operation1162,163
+data Operation1 = Add1 Add1162,163
+                | Subtract1 Subtract1163,164
+compute1 compute1166,167
+show1 show1170,171
+data Add2 Add2173,174
+data Add2 = Add2 Add2173,174
+data Subtract2 Subtract2175,176
+data Subtract2 = Subtract2 Subtract2175,176
+class Operation2 Operation2178,179
+  compute2 compute2179,180
+instance Operation2 Operation2 Add2181,182
+  compute2 compute2182,183
+instance Operation2 Operation2 Subtract2184,185
+  compute2 compute2185,186
+data PasswordRequirement PasswordRequirement206,207
+  MinimumLength MinimumLength207,208
+  | ContainsSome ContainsSome208,209
+  | DoesNotContain DoesNotContain209,210
+  | And And210,211
+  | Or Or211,212
+passwordAllowed passwordAllowed214,215
+data Arithmetic Arithmetic237,238
+data Arithmetic = TodoTodo237,238
+literal literal240,241
+operation operation243,244
+evaluate evaluate246,247
+render render249,250
+
+./Set12.hs,1167
+module Set12 Set120,1
+incrementAll incrementAll18,19
+fmap2 fmap239,40
+fmap3 fmap342,43
+data Result Result52,53
+data Result a = MkResult MkResult52,53
+data Result a = MkResult a | NoResult NoResult52,53
+data Result a = MkResult a | NoResult | Failure Failure52,53
+instance Functor Functor Result55,56
+  fmap fmap56,57
+data List List66,67
+data List a = Empty Empty66,67
+data List a = Empty | LNode LNode66,67
+instance Functor Functor List69,70
+data TwoList TwoList80,81
+data TwoList a = TwoEmpty TwoEmpty80,81
+data TwoList a = TwoEmpty | TwoNode TwoNode80,81
+instance Functor Functor TwoList83,84
+count count95,96
+inBoth inBoth106,107
+instance Foldable Foldable List119,120
+  foldr foldr120,121
+instance Foldable Foldable TwoList129,130
+  foldr foldr130,131
+data Fun Fun139,140
+data Fun a = Fun Fun139,140
+runFun runFun141,142
+instance Functor Functor Fun144,145
+data Tree Tree197,198
+data Tree a = Leaf Leaf197,198
+data Tree a = Leaf | Node Node197,198
+instance Functor Functor Tree200,201
+  fmap fmap201,202
+sumTree sumTree203,204
+instance Foldable Foldable Tree206,207
+  foldMap foldMap207,208
+
+./Set2bTest.hs,473
+module Set2bTest Set2bTest2,3
+main main12,13
+tests tests14,15
+ex1_binomial ex1_binomial23,24
+ex2_oddFactorial ex2_oddFactorial29,30
+ex3_myGcd ex3_myGcd34,35
+word word40,41
+ex4_leftpad ex4_leftpad42,43
+ex5_countdown ex5_countdown49,50
+primes primes59,60
+ex6_smallestDivisor_prime ex6_smallestDivisor_prime63,64
+ex6_smallestDivisor_comp ex6_smallestDivisor_comp67,68
+ex7_isPrime ex7_isPrime73,74
+ex8_biggestPrimeAtMost ex8_biggestPrimeAtMost79,80
+
+./Set4bTest.hs,440
+module Set4bTest Set4bTest2,3
+main main13,14
+tests tests15,16
+ex1_countNothings ex1_countNothings23,24
+ex2_myMaximum ex2_myMaximum31,32
+niceDouble niceDouble39,40
+ex3_sumAndLength ex3_sumAndLength41,42
+ex4_myConcat ex4_myConcat46,47
+ex5_largest ex5_largest51,52
+ex6_myHead_empty ex6_myHead_empty57,58
+ex6_myHead_full ex6_myHead_full60,61
+ex7_myLast_empty ex7_myLast_empty65,66
+ex7_myLast_full ex7_myLast_full68,69
+
+./Set2b.hs,307
+module Set2b Set2b0,1
+binomial binomial17,18
+oddFactorial oddFactorial30,31
+myGcd myGcd65,66
+leftpad leftpad85,86
+countdown countdown118,119
+countdownHelper countdownHelper121,122
+smallestDivisor smallestDivisor139,140
+isPrime isPrime149,150
+biggestPrimeAtMost biggestPrimeAtMost164,165
+
+./Set14bTest.hs,578
+module Set14bTest Set14bTest2,3
+main main21,22
+tests tests23,24
+word word34,35
+getAllQuery' getAllQuery'36,37
+ex1 ex139,40
+ex2_small ex2_small56,57
+ex2_big ex2_big72,73
+ex3 ex388,89
+ex4_small ex4_small98,99
+mkDeposit mkDeposit114,115
+ex4_big ex4_big116,117
+get get132,133
+ex5 ex5134,135
+testHTTP testHTTP143,144
+ex6_small ex6_small155,156
+depositPath depositPath159,160
+ex6_big ex6_big164,165
+ex7_small ex7_small173,174
+ex7_big ex7_big177,178
+ex8_parseCommand ex8_parseCommand186,187
+isError isError200,201
+ex8_http ex8_http202,203
+
+./Set4aTest.hs,925
+module Set4aTest Set4aTest2,3
+main main15,16
+tests tests17,18
+m_ex1_true m_ex1_true32,33
+m_ex1_false m_ex1_false34,35
+ex1 ex137,38
+ex1_one ex1_one43,44
+m_ex2 m_ex248,49
+ex2_int ex2_int52,53
+ex2_char ex2_char54,55
+m_ex3 m_ex358,59
+ex3_char ex3_char64,65
+ex3_int ex3_int65,66
+genRangeOf genRangeOf67,68
+m_ex4 m_ex472,73
+ex4_int ex4_int75,76
+ex4_integer ex4_integer76,77
+ex4_double ex4_double77,78
+ex5_int ex5_int83,84
+ex5_char ex5_char90,91
+ex6_bool_float ex6_bool_float100,101
+ex6_char_int ex6_char_int109,110
+ex7 ex7120,121
+ex8_winner ex8_winner129,130
+ex8_tie ex8_tie139,140
+ex9_bool ex9_bool147,148
+ex9_int ex9_int159,160
+ex10_success ex10_success169,170
+ex10_missing ex10_missing180,181
+ex10_notEnough ex10_notEnough190,191
+ex11_swap_small ex11_swap_small201,202
+ex11_swap_large ex11_swap_large210,211
+ex12_bool ex12_bool222,223
+ex12_int ex12_int228,229
+
+./Set14aTest.hs,493
+module Set14aTest Set14aTest2,3
+main main21,22
+tests tests23,24
+letter letter34,35
+ex1_short ex1_short36,37
+ex1_long ex1_long41,42
+shuf shuf46,47
+word word49,50
+ex2 ex251,52
+noRepeats noRepeats59,60
+ex3 ex361,62
+ex4 ex469,70
+ex5 ex576,77
+ex6_simple ex6_simple80,81
+ex6 ex686,87
+exoticLetter exoticLetter94,95
+maybeExoticLetter maybeExoticLetter95,96
+encode encode98,99
+ex7_ok ex7_ok100,101
+fault fault105,106
+ex7_fail ex7_fail109,110
+ex8 ex8117,118
+
+./Set9bTest.hs,1663
+module Set9bTest Set9bTest1,2
+main main12,13
+tests tests14,15
+size size32,33
+coord coord35,36
+boundedCoord boundedCoord40,41
+board board46,47
+dangerZone dangerZone54,55
+safeZone safeZone63,64
+full full72,73
+queens queens75,76
+stack stack87,88
+ex1_nextRow ex1_nextRow94,95
+ex1_nextCol ex1_nextCol98,99
+ex2_examples ex2_examples104,105
+ex2_size ex2_size108,109
+ex2_content ex2_content118,119
+ex2_comm ex2_comm125,126
+ex2_correctness ex2_correctness134,135
+ex3_sameRow_pos ex3_sameRow_pos152,153
+ex3_sameRow_neg ex3_sameRow_neg159,160
+ex3_sameCol_pos ex3_sameCol_pos165,166
+ex3_sameCol_neg ex3_sameCol_neg172,173
+ex3_sameDiag_pos ex3_sameDiag_pos178,179
+ex3_sameDiag_neg ex3_sameDiag_neg185,186
+ex3_sameAntidiag_pos ex3_sameAntidiag_pos191,192
+ex3_sameAntidiag_neg ex3_sameAntidiag_neg198,199
+ex4_danger ex4_danger206,207
+ex4_danger_neg ex4_danger_neg217,218
+ex4_danger_neg_2 ex4_danger_neg_2224,225
+ex5_size ex5_size236,237
+ex5_content ex5_content247,248
+ex5_comm ex5_comm255,256
+ex5_correctness ex5_correctness266,267
+ex6_fixFirst_safeZone ex6_fixFirst_safeZone293,294
+ex6_fixFirst_dangerZone ex6_fixFirst_dangerZone302,303
+ex6_fixFirst_outside ex6_fixFirst_outside324,325
+ex7_continue ex7_continue332,333
+ex7_backtrack ex7_backtrack355,356
+steps_4 steps_4376,377
+ex8_step_4 ex8_step_4390,391
+ex8_step_continue ex8_step_continue392,393
+ex8_step_backtrack ex8_step_backtrack408,409
+m_finish_sol m_finish_sol425,426
+ex9_finish_small ex9_finish_small428,429
+m_finish_n m_finish_n437,438
+ex9_finish_medium ex9_finish_medium444,445
+ex9_finish_large ex9_finish_large445,446

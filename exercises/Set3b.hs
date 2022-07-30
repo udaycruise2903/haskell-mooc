@@ -39,7 +39,10 @@ import Mooc.Todo
 --   buildList 7 0 3 ==> [3]
 
 buildList :: Int -> Int -> Int -> [Int]
-buildList start count end = todo
+buildList start 0 end = [end]
+buildList start count end = start: (buildList (start)(count-1)(end))
+
+
 
 ------------------------------------------------------------------------------
 -- Ex 2: given i, build the list of sums [1, 1+2, 1+2+3, .., 1+2+..+i]
@@ -50,7 +53,6 @@ buildList start count end = todo
 
 sums :: Int -> [Int]
 sums i = todo
-
 ------------------------------------------------------------------------------
 -- Ex 3: define a function mylast that returns the last value of the
 -- given list. For an empty list, a provided default value is
@@ -63,7 +65,10 @@ sums i = todo
 --   mylast 0 [1,2,3] ==> 3
 
 mylast :: a -> [a] -> a
-mylast def xs = todo
+--mylast def xs = todo
+mylast def [] = def
+mylast def [x] = x
+mylast def (_:xs) = (mylast (def) (xs))
 
 ------------------------------------------------------------------------------
 -- Ex 4: safe list indexing. Define a function indexDefault so that
@@ -82,6 +87,21 @@ mylast def xs = todo
 
 indexDefault :: [a] -> Int -> a -> a
 indexDefault xs i def = todo
+{-
+indexDefault (x:xs) i def
+    | (i<0)= def
+    | (i==0)= x
+    | (i>0) if (x:xs)<i then x : indexDefault (i-1)(def) else def
+    | otherwise = "error"
+-}
+--indexDefault [] 0 def = 0
+{-
+indexDefault (x:_) 0 def = x
+indexDefault (_:xs) i def = if (i > 0)
+                            then xs : indexDefault (xs) (i-1) (def)
+                            else def
+-}
+
 
 ------------------------------------------------------------------------------
 -- Ex 5: define a function that checks if the given list is in
@@ -97,7 +117,11 @@ indexDefault xs i def = todo
 --   sorted [7,2,7] ==> False
 
 sorted :: [Int] -> Bool
-sorted xs = todo
+--sorted xs = todo
+
+sorted [] = True
+sorted [x] = True
+sorted (x:xs) = sorted (xs) 
 
 ------------------------------------------------------------------------------
 -- Ex 6: compute the partial sums of the given list like this:
@@ -122,7 +146,16 @@ sumsOf xs = todo
 --   merge [1,1,6] [1,2]   ==> [1,1,1,2,6]
 
 merge :: [Int] -> [Int] -> [Int]
-merge xs ys = todo
+--merge xs ys = todo
+merge [] [] = []
+merge [] [y] = [y]
+merge [x] [] = [x]
+merge [x] [y] = if [x] <= [y] then [x,y] else [y,x]
+merge [] (y:ys) = y : merge [] (ys)
+merge (x:xs) [] = x : merge [] (xs)
+merge [x] (y:ys) = if [x] < (y:ys) then y: merge [x](ys) else y:merge [x](ys)
+--merge (x:xs) [y] = 
+                      
 
 ------------------------------------------------------------------------------
 -- Ex 8: compute the biggest element, using a comparison function
@@ -146,7 +179,13 @@ merge xs ys = todo
 --     ==> [1,2]
 
 mymaximum :: (a -> a -> Bool) -> a -> [a] -> a
-mymaximum bigger initial xs = todo
+--mymaximum bigger initial xs = todo
+
+mymaximum bigger initial [] = initial
+mymaximum bigger initial (x:xs) = if (bigger)(initial)(x)
+                                  then x
+                                  else (mymaximum bigger initial (xs))
+
 
 ------------------------------------------------------------------------------
 -- Ex 9: define a version of map that takes a two-argument function
@@ -185,3 +224,5 @@ map2 f as bs = todo
 
 maybeMap :: (a -> Maybe b) -> [a] -> [b]
 maybeMap f xs = todo
+--maybeMap (Nothing) xs = []
+--maybeMap (Just xs) = [xs]

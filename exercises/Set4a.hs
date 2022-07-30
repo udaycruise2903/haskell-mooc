@@ -34,8 +34,9 @@ import Data.Array
 -- PS. check out the error message you get with your implementation if
 -- you remove the Eq a => constraint from the type!
 
-allEqual :: Eq a => [a] -> Bool
-allEqual xs = todo
+allEqual ::Eq a =>[a] -> Bool
+allEqual [] = True
+--allEqual xs = if head xs == tail xs then True else False
 
 ------------------------------------------------------------------------------
 -- Ex 2: implement the function distinct which returns True if all
@@ -50,7 +51,8 @@ allEqual xs = todo
 --   distinct [1,2] ==> True
 
 distinct :: Eq a => [a] -> Bool
-distinct = todo
+distinct [] = True
+
 
 ------------------------------------------------------------------------------
 -- Ex 3: implement the function middle that returns the middle value
@@ -63,8 +65,12 @@ distinct = todo
 --   middle 'b' 'a' 'c'  ==> 'b'
 --   middle 1 7 3        ==> 3
 
-middle = todo
-
+middle :: Ord a => a -> a -> a  -> a
+middle x y z
+    | x < y && y < z || x > y && y > z = y
+    | x < z && z < y || x > z && z > y = z
+    | y < x && x < z || y > x && x > z = x
+    | otherwise = if x == y then x else z
 ------------------------------------------------------------------------------
 -- Ex 4: return the range of an input list, that is, the difference
 -- between the smallest and the largest element.
@@ -78,8 +84,8 @@ middle = todo
 --   rangeOf [4,2,1,3]          ==> 3
 --   rangeOf [1.5,1.0,1.1,1.2]  ==> 0.5
 
-rangeOf :: [a] -> a
-rangeOf = todo
+rangeOf :: (Num a, Ord a) =>  [a] -> a
+rangeOf xs = maximum xs - minimum xs
 
 ------------------------------------------------------------------------------
 -- Ex 5: given a (non-empty) list of (non-empty) lists, return the longest
@@ -113,7 +119,7 @@ longest = todo
 --   incrementKey True [(True,1),(False,3),(True,4)] ==> [(True,2),(False,3),(True,5)]
 --   incrementKey 'a' [('a',3.4)] ==> [('a',4.4)]
 
-incrementKey :: k -> [(k,v)] -> [(k,v)]
+--incrementKey :: k -> [(k,v)] -> [(k,v)]
 incrementKey = todo
 
 ------------------------------------------------------------------------------
@@ -129,7 +135,7 @@ incrementKey = todo
 -- length to a Fractional
 
 average :: Fractional a => [a] -> a
-average xs = todo
+average xs = (sum xs)/(fromIntegral(length xs))
 
 ------------------------------------------------------------------------------
 -- Ex 8: given a map from player name to score and two players, return
