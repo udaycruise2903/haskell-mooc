@@ -2735,7 +2735,7 @@ this topic connects to equational reasoning discussed in chapter 10.
 <div class="sourceCode" id="cb214"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb214-1"><a href="#cb214-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Python</span></span>
 <span id="cb214-2"><a href="#cb214-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> op(val)</span>
 <span id="cb214-3"><a href="#cb214-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> x:</span>
-<span id="cb214-4"><a href="#cb214-4" aria-hidden="true" tabindex="-1"></a>  f x</span></code></pre></div>
+<span id="cb214-4"><a href="#cb214-4" aria-hidden="true" tabindex="-1"></a>  f(x)</span></code></pre></div>
 <div class="sourceCode" id="cb215"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb215-1"><a href="#cb215-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Java</span></span>
 <span id="cb215-2"><a href="#cb215-2" aria-hidden="true" tabindex="-1"></a><span class="bu">Object</span> x <span class="op">=</span> <span class="fu">op</span><span class="op">(</span>val<span class="op">);</span></span>
 <span id="cb215-3"><a href="#cb215-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="op">(</span>x <span class="op">!=</span> <span class="kw">null</span><span class="op">)</span> <span class="op">{</span></span>
@@ -3625,7 +3625,7 @@ None of the above
 <span id="cb316-3"><a href="#cb316-3" aria-hidden="true" tabindex="-1"></a><span class="dt">Prelude</span> <span class="dt">T</span><span class="op">&gt;</span> <span class="kw">import</span> <span class="kw">qualified</span> <span class="dt">Data.Text.Lazy</span> <span class="kw">as</span> <span class="dt">TL</span></span>
 <span id="cb316-4"><a href="#cb316-4" aria-hidden="true" tabindex="-1"></a><span class="dt">Prelude</span> <span class="dt">T</span> <span class="dt">TL</span><span class="op">&gt;</span> TL.head (TL.pack (<span class="fu">repeat</span> <span class="ch">&#39;x&#39;</span>))</span>
 <span id="cb316-5"><a href="#cb316-5" aria-hidden="true" tabindex="-1"></a><span class="ch">&#39;x&#39;</span></span></code></pre></div>
-<p>Another practical problem that sometimes crops is that you can end up with a mismatch between strict and lazy <code>Text</code>s when using libraries. You can usually fix this by using <code>toStrict</code> or <code>fromStrict</code> as needed.</p>
+<p>Another practical problem is that you can end up with a mismatch between strict and lazy <code>Text</code>s when using libraries. You can usually fix this by using <code>toStrict</code> or <code>fromStrict</code> as needed.</p>
 <div class="sourceCode" id="cb317"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb317-1"><a href="#cb317-1" aria-hidden="true" tabindex="-1"></a><span class="dt">Prelude</span> <span class="dt">T</span> <span class="dt">TL</span><span class="op">&gt;</span> lazyPhrase <span class="ot">=</span> TL.pack <span class="st">&quot;brevity is the soul of wit&quot;</span></span>
 <span id="cb317-2"><a href="#cb317-2" aria-hidden="true" tabindex="-1"></a><span class="dt">Prelude</span> <span class="dt">T</span> <span class="dt">TL</span><span class="op">&gt;</span> <span class="op">:</span>t lazyPhrase</span>
 <span id="cb317-3"><a href="#cb317-3" aria-hidden="true" tabindex="-1"></a><span class="ot">lazyPhrase ::</span> <span class="dt">TL.Text</span></span>
@@ -4218,7 +4218,7 @@ liftA2 sumMoney (parseMoney &quot;123&quot; &quot;e&quot;) (parseMoney &quot;xxx
 </section>
 <section id="dealing-with-failure-alternative" data-number="7.7">
 <h2 data-number="15.7"><span class="header-section-number">15.7</span> Dealing with Failure: <code>Alternative</code></h2>
-<p>If you play around with applicatives a bit you’ll start to notice some limits to their power. For example, when writing parsers like we did in the <code>parseMoney</code> example, it would be nice to be able to try some a couple of different parsers and take any non-failure result. This is easy enough to write for a concrete Applicative like <code>Maybe</code>, as can be seen below.</p>
+<p>If you play around with applicatives a bit you’ll start to notice some limits to their power. For example, when writing parsers like we did in the <code>parseMoney</code> example, it would be nice to be able to try a couple of different parsers and take any non-failure result. This is easy enough to write for a concrete Applicative like <code>Maybe</code>, as can be seen below.</p>
 <div class="sourceCode" id="cb380"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb380-1"><a href="#cb380-1" aria-hidden="true" tabindex="-1"></a><span class="kw">data</span> <span class="dt">Answer</span> <span class="ot">=</span> <span class="dt">Yes</span> <span class="op">|</span> <span class="dt">No</span></span>
 <span id="cb380-2"><a href="#cb380-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">deriving</span> (<span class="dt">Show</span>, <span class="dt">Eq</span>)</span>
 <span id="cb380-3"><a href="#cb380-3" aria-hidden="true" tabindex="-1"></a></span>
